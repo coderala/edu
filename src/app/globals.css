@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap");
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -40,3 +48,45 @@ a {
     color-scheme: dark;
   }
 }
+
+/* website css  */
+
+.control-dots {
+  position: absolute;
+  top: 32%;
+  left: -25%;
+  /* list-style-type: none; */
+  /* background: #b3ff26; */
+  width: 120px !important;
+  height: 100px;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  transform: rotate(90deg);
+  /* transform-origin: center; */
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+body {
+  background: #fff8f8;
+}
+@media (min-width: 640px) {
+  .control-dots {
+    left: -58px;
+  }
+}
+@media (min-width: 1024px) {
+  .control-dots {
+    left: 50px;
+  }
+}
+
